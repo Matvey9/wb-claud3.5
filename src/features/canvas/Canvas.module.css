@@ -1,0 +1,27 @@
+.canvasContainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  cursor: default;
+}
+
+.canvasContainer[data-tool='pen'] {
+  cursor: crosshair;
+}
+
+.canvasContainer[data-tool='eraser'] {
+  cursor: cell;
+}
+
+.canvasContainer[data-tool='select'] {
+  cursor: default;
+}
+
+.canvasContainer[data-tool='text'] {
+  cursor: text;
+}
+
+.canvasContainer[data-dragging='true'] {
+  cursor: grab;
+} 
